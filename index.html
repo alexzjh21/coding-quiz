@@ -8,12 +8,10 @@
     <title>Coding Quiz</title>
 </head>
 <body>
-    <div class="top">
-        <h2>Coding Quiz Challenge</h2>
-    </div>
+    <div class="top">Coding Quiz Challenge</div>
     
     <div class="container">
-        <div class="start">Start Quiz</div>
+        <div id="start">Start Quiz</div>
         <div id="quiz" style="display: none">
             <div id="question"></div>
             <div id="question-img"></div>
@@ -23,13 +21,11 @@
                 <div class="option" id="C" onclick="checkAnswer('C')"></div>
             </div>
 
-            <div id="timer">
-                <div>Timer</div>
-            </div>
+            <div id="timer"></div>
         
         </div>
 
-        <div class="highscore-container" style="display:none"></div>
+        <div id="highscore-container" style="display:none"></div>
     </div>
 
     <script src="./assets/js/script.js"></script>
