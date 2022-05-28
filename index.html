@@ -4,30 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./assets/css/styles.css" rel="stylesheet">
-    <title>Coding Quiz</title>
+    <title>Basic Coding Quiz!</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
-    <div class="top">Coding Quiz Challenge</div>
-    
-    <div class="container">
-        <div id="start">Start Quiz</div>
-        <div id="quiz" style="display: none">
-            <div id="question"></div>
-            <div id="question-img"></div>
-            <div id="options">
-                <div class="option" id="A" onclick="checkAnswer('A')"></div>
-                <div class="option" id="B" onclick="checkAnswer('B')"></div>
-                <div class="option" id="C" onclick="checkAnswer('C')"></div>
-            </div>
-
-            <div id="timer"></div>
-        
+    <header>
+        <h1 class="heading">Basic JavaScript Coding Quiz</h1>
+        <ul>
+            <li class="high-score">
+                <a href="./highscore.html">View Highscores</a>
+            </li>
+            <li class="answer"></li>
+            <li class="timer">
+                Countdown Starts when you start quiz 
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div class="instruction">
+            <h2>Test Out Your Knowledge!</h2>
+            <p>
+                The quiz will consist of 10 questions and you have 100 seconds to answer as many questions as possible. <br>
+                An incorrect answer will take some time off the clock!. <br>
+                The quiz is finished when you answered all 10 questions, or when your time runs out. <br>
+                The top 3 Highscores get to tay on the ranking board of the website!
+            </p>
         </div>
 
-        <div id="highscore-container" style="display:none"></div>
-    </div>
-
+        <div class="questions-form">
+            <h2 class="question">
+                Quiz questions will display here on start
+            </h2>
+            <ul class="choices">
+                <li class="choice1"></li>
+                <li class="choice2"></li>
+                <li class="choice3"></li>
+                <li class="choice4"></li>
+            </ul>
+        </div>
+        <div class="high-score-form">
+            <h3 class="score-report"> </h3>
+            <input  type="text"  class="initials" name="initials" placeholder="Enter Initials" />
+            <a href="./highscore.html" class="submit" id="register-high-score" type="button">Submit</a>   
+        </div>
+        <div class="buttons">
+            <button class="btn" id="start" type="submit">
+                Start Quiz!
+            </button>
+        </div>
+    </main>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>

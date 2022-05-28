@@ -1,94 +1,170 @@
-.top {
-    text-align: center;
-    padding-left: 50px;
-    padding-right: 50px;
-    position: relative;
-    font-size: large;
-    color: green;
-    font-size: 300%;
+body {
+    background-color: orange;
+    color: purple;
+    align-content: center;
 }
+/* Header */
+header {
+    color: purple;
 
-#timer {
-    float: right;
-    align-self: right;
+}
+header h1 {
+    text-align: center;
+    
+}
+header ul {
+    display:flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0 30px 20px 30px;
+}
+header li {
     display: inline;
-    padding-right: 20px;
-    position: relative;
-    font-size: large;
 }
 
-#container {
-    margin: 20px auto;
-    background-color: white;
-    height: 300px;
-    width: 700px;
-    border-radius: 5px;
-    box-shadow: 0px 5px 15px 0px;
-    position: relative;
+header a {
+    text-decoration: none;
+    color:purple;
 }
-
-#start {
-    font-size: 1.5em;
-    font-weight: bolder;
-    word-break: break-all;
-    width: 100px;
-    height: 150px;
-    border: 2px solid lightgrey;
+header a:hover {
+    font-size: 120%;
+}
+/* Intro Page Styles */
+.instruction {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.instruction h2 {
+    text-align:center;
+    margin: 0 0 10px 0;
+}
+.instruction p {
     text-align: center;
-    cursor: pointer;
-    position: absolute;
-    left: 300px;
-    top: 50px;
-    color: lightgrey;
+    margin:10px;
+}
+/* Quiz Body styles */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position: 100%;
+    
 }
 
-#start:hover {
-    border: 3px solid lightseagreen;
-    color: lightseagreen;
+main li {
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+    border: solid white;
+    border-radius: 15px;
 }
 
-#question {
-    width: 500px;
-    height: 125px;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-#question p {
-    margin: 0;
-    padding: 15px;
-    font-size: 1.25em;
+main li:hover{
+    font-size: 120%;
 }
 
-#options {
-    width: 480px;
-    position: absolute;
-    right: 0;
-    top: 125px;
-    padding: 10px
-}
-
-.choice {
-    display: inline-block;
-    width: 135px;
+.questions-form {
+    border-style: ridge;
+    background-position: 80%;
+    padding: 5px 10px 5px 10px;
     text-align: center;
-    border: 1px solid grey;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 5px;
+    margin-bottom: 20px;
+
 }
 
-.choice:hover {
-    border: 2px solid grey;
+.start-quiz p {
+    text-align: center;
+}
+
+.choices {
+    padding-inline-start: 0;
+}
+
+.buttons{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+}
+
+button {
+    display: block;
+    color: purple;
+    background-color: grey(3, 12, 34);
     font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: purple;
+    height: 40px;
+    margin: 10px;
 }
 
-#start{
-    background-color: blueviolet;
-    size: 200%;
+button:hover {
+    cursor: pointer;
+    color: rgb(77, 133, 206);
+    font-size: 120%;
+}
+
+.high-score-form h3 {
     text-align: center;
-    font-size: 160%;
-    color: white;
-    padding: 20px 40px;
-    margin: 10px;
+    margin: 5px;
+}
+
+.high-score-form input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow:0 0 15px 4px rgba(222, 215, 21, 0.06);
+    border: none;
+    width: 40%;
+}
+
+.high-score-form a {
+    text-decoration: none;
+    color: purple;
+}
+
+.high-score-form a:hover {
+    font-size: 120%;
+}
+
+.scores-form {
+    border-style: groove;
+    display:flex;
+    text-align: center;
+    flex-direction: column;
+    width:auto;
+    border-radius: 10px;
+    margin: 10% 30% 0 30%;
+}
+.scores-form h1 {
+    margin-bottom: 0;
+}
+
+.scores-form p {
+    margin-bottom: 0;
+}
+
+.scores-form ul {
+    list-style-type: numbers;
+    list-style-position: inside;
+}
+
+.scores-form li {
+    padding: 2.5px;
+}
+
+.scores-form div {
+    display:flex;
+    justify-content: center;
+}
+
+.scores-form button {
+    width:100px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.scores-form a {
+    text-decoration: none;
 }
